@@ -6,7 +6,7 @@
         private $cover_art;
         private $price;
 
-        function __contsruct($album_name, $band_name, $image_path, $album_price = 10.99)
+        function __construct($album_name, $band_name, $image_path, $album_price = 10.99)
         {
             $this->title = $album_name;
             $this->artist = $band_name;
@@ -18,7 +18,7 @@
         {
             $float_price = (float) $new_price;
             if ($float_price != 0) {
-                $formatted_price = number_format($float_price), 2);
+                $formatted_price = number_format(($float_price), 2);
                 $this->price = $formatted_price;
             }
         }
